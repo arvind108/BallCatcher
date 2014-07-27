@@ -14,9 +14,11 @@ public class MainActivity extends Activity {
    @Override
    public void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
-      View bouncingBallView = new ballview(this);
+     
      this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-      setContentView(bouncingBallView);
+      setContentView(R.layout.main_screen);
+      Ballview bouncingBallView = (Ballview) findViewById(R.id.ballview);
+      
       bouncingBallView.setBackgroundColor(Color.BLACK);
       bouncingBallView.setBackgroundResource(R.drawable.bg1);
    

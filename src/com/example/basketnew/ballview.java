@@ -12,11 +12,12 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
+import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ProgressBar;
    
-public class ballview extends View {
+public class Ballview extends View {
    private int xMax;
    private int yMax;
    private int dropimgwidh1,dropimgwidh2;
@@ -37,20 +38,26 @@ public class ballview extends View {
   
   
    // Constructor
-   public ballview(Context context) {
+   public Ballview(Context context) {
       super(context);
-      paint = new Paint();
-      rn=new Random();
-      arlist=new ArrayList<Bitmap>();
-      progresss=new ProgressBar(getContext());
-      bitmap = BitmapFactory.decodeResource(res, R.drawable.finalcartquickr);
-      arlist.add(BitmapFactory.decodeResource(res, R.drawable.car));
-	   arlist.add(BitmapFactory.decodeResource(res, R.drawable.inverter));
-	   arlist.add(BitmapFactory.decodeResource(res, R.drawable.laptop));
-	   arlist.add(BitmapFactory.decodeResource(res, R.drawable.dvd));
-	   arlist.add(BitmapFactory.decodeResource(res, R.drawable.bike));
-	   arlist.add(BitmapFactory.decodeResource(res, R.drawable.samsungmobile));
-	   arlist.add(BitmapFactory.decodeResource(res, R.drawable.camera));
+     
+   }
+   
+   
+   public Ballview(Context context, AttributeSet attrs){
+	   super(context,attrs);
+	   paint = new Paint();
+	      rn=new Random();
+	      arlist=new ArrayList<Bitmap>();
+	      progresss=new ProgressBar(context);
+	      bitmap = BitmapFactory.decodeResource(res, R.drawable.finalcartquickr);
+	      arlist.add(BitmapFactory.decodeResource(res, R.drawable.car));
+		   arlist.add(BitmapFactory.decodeResource(res, R.drawable.inverter));
+		   arlist.add(BitmapFactory.decodeResource(res, R.drawable.laptop));
+		   arlist.add(BitmapFactory.decodeResource(res, R.drawable.dvd));
+		   arlist.add(BitmapFactory.decodeResource(res, R.drawable.bike));
+		   arlist.add(BitmapFactory.decodeResource(res, R.drawable.samsungmobile));
+		   arlist.add(BitmapFactory.decodeResource(res, R.drawable.camera));
    }
    
    // Called back to draw the view. Also called by invalidate().

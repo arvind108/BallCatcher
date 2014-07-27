@@ -75,11 +75,11 @@ public class endpage extends Activity{
 			}
 		});
 	}
-@Override
-public void onBackPressed() {
-	// TODO Auto-generated method stub
-	Intent intent = new Intent(getApplicationContext(),Startpage.class);
-    this.startActivity(intent);
-    return;
-}
+//@Override
+//public void onBackPressed() {
+//	// TODO Auto-generated method stub
+//	Intent intent = new Intent(getApplicationContext(),Startpage.class);
+//    this.startActivity(intent);
+//    return;
+//}
 }
