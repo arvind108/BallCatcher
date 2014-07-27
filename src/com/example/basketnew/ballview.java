@@ -31,7 +31,6 @@ public class ballview extends View {
    private Paint paint;           // The paint (e.g. style, color) used for drawing
    private Random rn=null;
    private int p=1,q=1;
-  // Bitmap[] myStringArray = new Bitmap[7];
    ArrayList< Bitmap> arlist;
    private ProgressBar progresss;
    Resources res = getResources();
@@ -189,6 +188,8 @@ public class ballview extends View {
       invalidate();  // Force a re-draw
       
     
+      
+      
   
    }
    
