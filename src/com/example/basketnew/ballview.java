@@ -121,26 +121,9 @@ public class Ballview extends View {
 					totalball++;
 					
 				}
-			     if(i==0)
-			     {
+			     
 			        cath++;
-			     if(cath==10)
-			       {
-					   
-					   MainActivity a=(MainActivity)getContext();
-						  a.res(cath);
-			      }
-			     }
-			     else
-			     {
-			    	 drop++;
-			    	 if(drop==5)
-				       {
-						   
-						   MainActivity a=(MainActivity)getContext();
-							  a.res(cath);
-				      }
-			     }
+			    
 			     y=0; 
 			     i=rn.nextInt(arlist.size());
 			     dropimgwidh1=arlist.get(i).getWidth();
@@ -166,8 +149,7 @@ public class Ballview extends View {
 					
 				}
 
-			   if(i==0)
-			   {
+
 			   drop++;
 			   if(drop==5)
 		       {
@@ -175,7 +157,7 @@ public class Ballview extends View {
 				   MainActivity a=(MainActivity)getContext();
 					  a.res(cath);
 		      }
-			   }
+			   
 			   y=0; 
 			   
 			   i=rn.nextInt(arlist.size());
@@ -233,15 +215,13 @@ public class Ballview extends View {
         	j=rn.nextInt(arlist.size());
         	dropimgwidh2=arlist.get(j).getWidth();
 			ballX=(float)rn.nextInt(xMax-dropimgwidh2);
-			if(j==0)
-			{
+
 	            drop++;
 			if(drop==5)
 		       {
 				 MainActivity a=(MainActivity)getContext();
 				  a.res(cath);
 		      }
-			}
 		}
 		else if(this.ballY<=yMax)
 		{
@@ -262,26 +242,8 @@ public class Ballview extends View {
 					totalball++;
 					
 				}
-				if(j==0)
-				{
+
 				cath++;
-				if(cath==10)
-			       {
-					   
-					   MainActivity a=(MainActivity)getContext();
-						  a.res(cath);
-			      }
-				}
-				else
-				{
-					drop++;
-					 if(drop==5)
-				       {
-						   
-						   MainActivity a=(MainActivity)getContext();
-							  a.res(cath);
-				      }
-				}
 				ballY=0;
 				j=rn.nextInt(arlist.size());
 				dropimgwidh2=arlist.get(j).getWidth();
